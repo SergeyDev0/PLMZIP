@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PLMZIP</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <header>
+        <div class="header__first-row">
+            <a class="logo-link" href="#"><img class="header__nav__logo" src="./Logo.png" alt="Logo"></a>
+            <ul class="header__nav">
+                <li class="header__nav-links">Оплата</li>
+                <li class="header__nav-links">Доставка</li>
+                <li class="header__nav-links">О компании</li>
+                <li class="header__nav-links">Контакты</li>
+                <li class="header__nav-links">Оптовый раздел</li>
+            </ul>
+            <ul class="header__nav__info">
+                <li class="header__nav__info__phone">+7 (965) 440-50-50</li>
+                <li class="header__nav__info__dropdown"> 
+                    <div class="dropdown">
+                        <button class="dropbtn" onclick="myFunction()">
+                            Аждар Насири
+                        </button>
+                        <div class="dropdown-content" id="myDropdown">
+                          <a href="#">Ссылка 1</a>
+                          <a style="color: black;" href="#">Ссылка 2</a>
+                          <a href="#">Ссылка 3</a>
+                        </div>
+                    </div> 
+                </li>
+            </ul>
+        </div>
+        <div class="header__second-row">
+            <div class="menu-wrapper">
+                <img class="menu-icon" src="" alt="menu">
+                <h3 class="menu-text">Каталог товаров</h3>
+            </div>
+            <div class="header__wrapper-input">
+                <input class="input__search" type="text" placeholder="Поиск среди всех товаров интернет-магазина">
+                <button class="input__search-btn">
+                    <img class="input__search-icon" src="./search_icon.png" alt="">
+                </button>
+            </div>
+            <ul class="header__nav__profile">
+                <li class="header__favourites">
+                    <a class="header__favourites-link" href="#">Избранное</a>
+                </li>
+                <li class="header__basket">
+                    <a class="header__basket-link" href="#">Корзина</a>
+                </li>
+            </ul>
+        </div>
+    </header>
+    <script>
+        function myFunction() {
+    document.getElementById("myDropdown").classList.toggle("show");
+  }
+  window.onclick = function(e) {
+    if (!e.target.matches('.dropbtn')) {
+    var myDropdown = document.getElementById("myDropdown");
+      if (myDropdown.classList.contains('show')) {
+        myDropdown.classList.remove('show');
+      }
+    }
+  }
+    </script>
+</body>
+</html>
